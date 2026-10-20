@@ -1,0 +1,40 @@
+{
+  "verificado_utc": "2026-10-20T02:22:20.969Z",
+  "proyecto": "asistentereg-ep2",
+  "proyecto_id": "rapid-tooth-70776957",
+  "consola": "https://console.neon.tech/app/projects/rapid-tooth-70776957",
+  "branch": "main",
+  "branch_id": "br-little-salad-b6z7hziv",
+  "base_datos": "asistentereg",
+  "esquema": "asistentereg",
+  "postgresql": "18.6",
+  "region": "aws-sa-east-1",
+  "plan_verificado": "free",
+  "compute_cu": 0.25,
+  "tablas": [
+    "drafts",
+    "embedding_cache",
+    "traces",
+    "turns",
+    "usage"
+  ],
+  "metodo_verificacion": "SQL mediante la integración autenticada de Neon; no se ejecutó el driver de la aplicación contra Neon",
+  "pruebas": {
+    "lectura_esquema": true,
+    "escritura_seis_intercambios": true,
+    "intercambios_conservados": 5,
+    "mensajes_conservados": 10,
+    "primer_intercambio_eliminado": true,
+    "primer_intercambio_conservado": 2,
+    "ultimo_intercambio_conservado": 6,
+    "persistencia_en_consulta_independiente": true,
+    "datos_de_prueba_eliminados": true,
+    "tablas_sin_datos_de_prueba": true
+  },
+  "openrouter": {
+    "llamadas": 0,
+    "costo_usd": 0
+  },
+  "pendiente": "Ejecutar verificar_base(store) en Colab para validar el driver psycopg y ConversationBufferWindowMemory con DATABASE_URL. Este entorno no resuelve por DNS el host de Neon.",
+  "incluye_credenciales": false
+}

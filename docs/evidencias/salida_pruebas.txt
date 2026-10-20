@@ -1,0 +1,9 @@
+.....................................................................sss [ 92%]
+ss....                                                                   [100%]
+=============================== warnings summary ===============================
+tests/test_agent.py::test_fuera_de_alcance_no_consume
+  /workspace/scratch/e282dd50bc35/asistente-reg/src/storage.py:142: LangChainDeprecationWarning: The class `ConversationBufferWindowMemory` was deprecated in LangChain 0.3.1 and will be removed in 2.0.0. Use `langchain.agents.create_agent` instead. For agents that need to remember prior interactions, use `create_agent` with checkpointing or the `Store` API. See https://docs.langchain.com/oss/python/langchain/short-term-memory and https://docs.langchain.com/oss/python/langchain/long-term-memory
+    return ConversationBufferWindowMemory(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+73 passed, 5 skipped, 1 warning in 2.59s

@@ -1,0 +1,13 @@
+{
+  "fecha_utc": "2026-10-20",
+  "modo": "SDK real con HTTP simulado",
+  "pruebas_sin_conexion_aprobadas": 59,
+  "pruebas_postgresql_omitidas": 5,
+  "llamadas_reales_openrouter": 0,
+  "gasto_openrouter_usd": 0,
+  "ajuste_colab_ya_abierto_verificado": true,
+  "effort": "low",
+  "parallel_tool_calls_en_peticion": false,
+  "modelo": "openai/gpt-6-luna",
+  "inferencia_real_pendiente": true
+}

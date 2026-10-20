@@ -1,0 +1,13 @@
+Entorno Python 3.12; modelos por API y persistencia PostgreSQL.
+langgraph 1.2.16
+langchain-core 1.6.12
+langchain-classic 1.0.8
+langchain-text-splitters 1.1.3
+openai 3.35.1
+streamlit 1.66.0
+psycopg 3.3.6
+torch no instalado
+transformers no instalado
+fastembed no instalado
+onnxruntime no instalado
+sentence_transformers no instalado

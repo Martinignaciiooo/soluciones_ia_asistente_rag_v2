@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+<rect width="1280" height="900" fill="#fafbfc"/>
+<style>text{font-family:DejaVu Sans,sans-serif;fill:#193348} .h{font-size:34px;font-weight:bold}.b{font-size:23px}.s{font-size:19px;fill:#4c6273}</style>
+<text x="55" y="65" class="h">Preparación en Google Colab</text>
+<text x="55" y="105" class="s">BOCETO DE DISEÑO · No corresponde a una captura de ejecución</text>
+<rect x="55" y="145" width="1170" height="145" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="183" class="b" font-weight="bold">1 Subir el proyecto ZIP</text>
+<text x="78" y="222" class="s">from google.colab import files</text>
+<text x="78" y="254" class="s">archivos = files.upload()</text>
+<rect x="55" y="315" width="555" height="205" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="353" class="b" font-weight="bold">2 Preparar e instalar</text>
+<text x="78" y="392" class="s">Extraer y validar el proyecto.</text>
+<text x="78" y="424" class="s">Ejecutar pruebas sin usar la API.</text>
+<text x="78" y="456" class="s">Guardar la salida para la entrega.</text>
+<rect x="640" y="315" width="585" height="205" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="663" y="353" class="b" font-weight="bold">3 Configurar secretos</text>
+<text x="663" y="392" class="s">OPENROUTER_API_KEY   [oculto]</text>
+<text x="663" y="424" class="s">DATABASE_URL                [oculto]</text>
+<text x="663" y="456" class="s">No mostrar valores en el notebook.</text>
+<rect x="55" y="545" width="1170" height="245" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="583" class="b" font-weight="bold">4 Verificar Neon e indexar el manual</text>
+<text x="78" y="622" class="s">Memoria: k=5, diez mensajes, eliminación del intercambio antiguo.</text>
+<text x="78" y="654" class="s">Cuatro archivos originales. Chunking de 700 caracteres con solapamiento 120.</text>
+<text x="78" y="686" class="s">17 fragmentos. Embeddings por OpenRouter, con caché en PostgreSQL.</text>
+<text x="78" y="718" class="s">Sólo los embeddings nuevos y las consultas reales consumen API.</text>
+<text x="55" y="862" class="s">AsistenteReg EP2 · OpenRouter para modelos · Neon para persistencia</text></svg>

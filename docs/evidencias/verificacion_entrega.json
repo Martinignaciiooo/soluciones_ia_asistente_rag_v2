@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-10-20",
+  "pruebas_totales_aprobadas_con_postgresql_embebido": 78,
+  "pruebas_sin_IA": 73,
+  "pruebas_postgresql": 5,
+  "clave_docente_usada_en_preparacion": false,
+  "modelo": "openai/gpt-6-luna",
+  "reasoning_effort": "low",
+  "embeddings": "openai/text-embedding-3-small",
+  "corpus_original_sha256": {
+    "calendario_academico.md": "9bd39646d1c400de2ef544b2cd84b706a77c5b2db6ca710f48d8cda78581846c",
+    "faq_registro.md": "a8df7c4893d8851433cb388ac53b8b0f150cbf79e790ef533cd105b4030e9eca",
+    "proceso_titulacion.md": "e8b6b72dfc119770e177a694ef2dbe66b82087b134b8f6feb044a8274aba2cac",
+    "reglamento_academico.md": "7b71ebcc721f720e69fd8433640b3dc4963976653d28469aaee75117e54a4fbd"
+  },
+  "notebook_celdas_sin_salidas": true,
+  "informe_paginas_renderizadas": 5,
+  "presentacion_laminas": 6,
+  "bocetos": 3,
+  "memoria_corto_plazo": "ConversationBufferWindowMemory k=5; 10 mensajes",
+  "memoria_largo_plazo": "borradores persistidos recuperados semánticamente; no chat eliminado",
+  "ensayo_real_version_final": "pendiente de ejecutar y exportar por el equipo",
+  "publicacion_github": "remoto v2 sin ramas al verificar; push pendiente del usuario",
+  "repositorio": "https://github.com/Martinignaciiooo/soluciones_ia_asistente_rag_v2",
+  "zip_sin_carpeta_intermedia": true
+}

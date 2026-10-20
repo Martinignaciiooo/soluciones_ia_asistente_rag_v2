@@ -1,0 +1,105 @@
+{
+  "modo": "Regresión simulada sin API; documentos reales del repositorio del grupo",
+  "resultado": {
+    "respuesta": "En la simulación 2026-01, el plazo de retiro termina el 10-04-2026; a la fecha consultada está vigente. [CAL-ACAD-2026-01, Calendario Académico Semestre 2026-01, v1.3]\n\nEl manual indica: «El retiro de una asignatura inscrita puede solicitarse hasta la semana 6 del semestre y no puede dejar al estudiante con una carga inferior a 12 créditos SCT.» [REG-ACAD-2026, Artículo 42. Retiro de asignaturas, v4.2]\n\nBorrador guardado #1. No se envió ninguna solicitud.",
+    "traza": {
+      "modo": "API simulada en pruebas",
+      "almacenamiento": "sqlite",
+      "consulta": "¿Hasta cuándo puedo retirar una asignatura? Prepara un borrador de consulta con los requisitos.",
+      "pii": {},
+      "plan": [
+        "recuperar contexto",
+        "consultar evidencia",
+        "verificar plazo si corresponde",
+        "guardar borrador solicitado",
+        "validar y responder"
+      ],
+      "herramientas": [
+        {
+          "nombre": "buscar_normativa",
+          "resultado": {
+            "documentos": [
+              {
+                "cita": "[CAL-ACAD-2026-01, Calendario Académico Semestre 2026-01, v1.3]",
+                "texto": "# Calendario Académico Semestre 2026-01\n\n| Hito | Fecha | Semana |\n|---|---|---|\n| Inicio de clases | 02-03-2026 | 1 |\n| Cierre de solicitudes de convalidación | 13-03-2026 | 2 |\n| Cierre de modificación de inscripción de asignaturas | 20-03-2026 | 3 |\n| Plazo final de retiro de asignaturas | 10-04-2026 | 6 |\n| Semana de evaluaciones parciales | 20-04-2026 a 24-04-2026 | 8 |\n| Plazo final de solicitud de suspensión de estudios | 24-04-2026 | 8 |\n| Receso de invierno | 06-07-2026 a 10-07-2026 | 18 |\n| Evaluaciones recuperativas | 06-07-2026 a 10-07-2026 | 18 |\n| Cierre de actas | 17-07-2026 | 20 |\n| Publicación de notas finales | 18-07-2026 | 20 |",
+                "origen": "calendario_academico.md",
+                "chunk_id": "CAL-ACAD-2026-01#000",
+                "metodo": "vectorial",
+                "puntaje": 1.0
+              },
+              {
+                "cita": "[REG-ACAD-2026, Artículo 53. Límite de convalidación, v4.2]",
+                "texto": "### Artículo 53. Límite de convalidación\nNo se puede convalidar más del 50% de los créditos SCT del plan de estudios, ni asignaturas\ndel último semestre del plan.",
+                "origen": "reglamento_academico.md",
+                "chunk_id": "REG-ACAD-2026#008",
+                "metodo": "vectorial",
+                "puntaje": 1.0
+              },
+              {
+                "cita": "[REG-ACAD-2026, Artículo 42. Retiro de asignaturas, v4.2]",
+                "texto": "### Artículo 42. Retiro de asignaturas\nEl retiro de una asignatura inscrita puede solicitarse hasta la semana 6 del semestre y no\npuede dejar al estudiante con una carga inferior a 12 créditos SCT. La asignatura retirada\nno se contabiliza como reprobada, pero sí ocupa una de las tres oportunidades de inscripción\nseñaladas en el Artículo 31 letra a).\n\n### Artículo 43. Retiro total de la institución\nEl retiro total se formaliza mediante solicitud escrita en la Oficina de Registro Curricular.\nGenera la caducidad de la matrícula del período y obliga a rendir un proceso de reincorporación\nen caso de retorno posterior.",
+                "origen": "reglamento_academico.md",
+                "chunk_id": "REG-ACAD-2026#006",
+                "metodo": "vectorial",
+                "puntaje": 1.0
+              }
+            ],
+            "sin_evidencia": false
+          }
+        },
+        {
+          "nombre": "evaluar_plazo",
+          "resultado": {
+            "tramite": "retiro",
+            "fecha_limite": "2026-04-10",
+            "fecha_consulta": "2026-04-06",
+            "estado": "vigente",
+            "calendario_aplicable": true,
+            "simulado": true,
+            "cita": "[CAL-ACAD-2026-01, Calendario Académico Semestre 2026-01, v1.3]",
+            "accion": "informar requisitos"
+          }
+        },
+        {
+          "nombre": "guardar_borrador",
+          "resultado": {
+            "id": 1,
+            "estado": "borrador guardado",
+            "enviado": false,
+            "aprobado": false
+          }
+        }
+      ],
+      "decisiones": [
+        {
+          "tramite": "retiro",
+          "plazo": "vigente",
+          "fecha_consulta": "2026-04-06"
+        }
+      ],
+      "llamadas": 3,
+      "intentos_llamada": 3,
+      "modelo": "simulado",
+      "clase_memoria": "ConversationBufferWindowMemory",
+      "limite_mensajes": 10,
+      "mensajes_memoria": 0,
+      "turnos_recientes": 0,
+      "mensajes_omitidos_por_tamano": 0,
+      "citas_validas_llm": false,
+      "validacion_final": "respuesta_desde_evidencia_y_borrador_validado",
+      "citas_validas": true,
+      "costo_acumulado_proyecto_usd": 0.0,
+      "latencia_ms": 56
+    },
+    "borradores": [
+      [
+        1,
+        "Consulta de retiro",
+        "BORRADOR PARA REVISIÓN. No acredita aprobación.\n\nSolicito orientación sobre el retiro. [CAL-ACAD-2026-01, Calendario Académico Semestre 2026-01, v1.3] [REG-ACAD-2026, Artículo 42. Retiro de asignaturas, v4.2]"
+      ]
+    ]
+  },
+  "pruebas_sin_conexion_aprobadas": 67,
+  "pruebas_postgresql_omitidas": 5,
+  "llamadas_reales_openrouter": 0
+}

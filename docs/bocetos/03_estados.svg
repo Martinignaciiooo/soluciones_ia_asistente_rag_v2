@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+<rect width="1280" height="900" fill="#fafbfc"/>
+<style>text{font-family:DejaVu Sans,sans-serif;fill:#193348} .h{font-size:34px;font-weight:bold}.b{font-size:23px}.s{font-size:19px;fill:#4c6273}</style>
+<text x="55" y="65" class="h">Estados y decisiones observables</text>
+<text x="55" y="105" class="s">BOCETO DE DISEÑO · No corresponde a una captura de ejecución</text>
+<rect x="55" y="145" width="555" height="230" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="183" class="b" font-weight="bold">Plazo vigente</text>
+<text x="78" y="222" class="s">Fecha de demo: 2026-04-06.</text>
+<text x="78" y="254" class="s">Consultar requisitos y calendario.</text>
+<text x="78" y="286" class="s">Permitir borrador solicitado con citas.</text>
+<text x="78" y="318" class="s">Comprobar herramientas en la traza.</text>
+<rect x="640" y="145" width="585" height="230" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="663" y="183" class="b" font-weight="bold">Plazo vencido</text>
+<text x="663" y="222" class="s">Fecha de demo: 2026-04-11.</text>
+<text x="663" y="254" class="s">Informar el vencimiento y derivar.</text>
+<text x="663" y="286" class="s">Etiquetar borrador de orientación.</text>
+<text x="663" y="318" class="s">No afirmar aceptación del trámite.</text>
+<rect x="55" y="405" width="555" height="210" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="443" class="b" font-weight="bold">Sin respaldo o fallo de API</text>
+<text x="78" y="482" class="s">Abstención si no hay evidencia.</text>
+<text x="78" y="514" class="s">Error saneado en la traza.</text>
+<text x="78" y="546" class="s">Cero reintentos automáticos.</text>
+<rect x="640" y="405" width="585" height="210" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="663" y="443" class="b" font-weight="bold">Recuperar un borrador</text>
+<text x="663" y="482" class="s">Sólo cuando el usuario lo pide.</text>
+<text x="663" y="514" class="s">Hasta dos resultados de veinte recientes.</text>
+<text x="663" y="546" class="s">Referencia BORRADOR, sin autoridad normativa.</text>
+<rect x="55" y="645" width="1170" height="145" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="683" class="b" font-weight="bold">Evidencia para revisar</text>
+<text x="78" y="722" class="s">Cada ejecución guarda su propio JSON, incluso si falla.</text>
+<text x="78" y="754" class="s">Descargar evidencia no realiza llamadas a modelos. Revisar antes de publicar.</text>
+<text x="55" y="862" class="s">AsistenteReg EP2 · OpenRouter para modelos · Neon para persistencia</text></svg>

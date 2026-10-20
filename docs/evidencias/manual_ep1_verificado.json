@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-10-20",
+  "referencia_git_ep1": "95f0888bf992d170fccb3a604c7a0cc413c4ebb5",
+  "archivos": [
+    {
+      "archivo": "calendario_academico.md",
+      "sha256": "9bd39646d1c400de2ef544b2cd84b706a77c5b2db6ca710f48d8cda78581846c",
+      "identico_ep1": true,
+      "fragmentos": 2
+    },
+    {
+      "archivo": "faq_registro.md",
+      "sha256": "a8df7c4893d8851433cb388ac53b8b0f150cbf79e790ef533cd105b4030e9eca",
+      "identico_ep1": true,
+      "fragmentos": 3
+    },
+    {
+      "archivo": "proceso_titulacion.md",
+      "sha256": "e8b6b72dfc119770e177a694ef2dbe66b82087b134b8f6feb044a8274aba2cac",
+      "identico_ep1": true,
+      "fragmentos": 3
+    },
+    {
+      "archivo": "reglamento_academico.md",
+      "sha256": "7b71ebcc721f720e69fd8433640b3dc4963976653d28469aaee75117e54a4fbd",
+      "identico_ep1": true,
+      "fragmentos": 9
+    }
+  ],
+  "total_fragmentos": 17,
+  "chunk_size_caracteres": 700,
+  "chunk_overlap_caracteres": 120,
+  "modelo_embeddings_actual": "openai/text-embedding-3-small",
+  "fuente": "data/interna/*.md",
+  "documentos_modificados": false,
+  "llamadas_reales_api_durante_verificacion": 0
+}

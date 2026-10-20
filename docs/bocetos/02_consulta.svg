@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+<rect width="1280" height="900" fill="#fafbfc"/>
+<style>text{font-family:DejaVu Sans,sans-serif;fill:#193348} .h{font-size:34px;font-weight:bold}.b{font-size:23px}.s{font-size:19px;fill:#4c6273}</style>
+<text x="55" y="65" class="h">Consulta con respuesta y borrador</text>
+<text x="55" y="105" class="s">BOCETO DE DISEÑO · No corresponde a una captura de ejecución</text>
+<rect x="55" y="145" width="1170" height="145" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="183" class="b" font-weight="bold">Perfil / Conversación / Fecha simulada</text>
+<text x="78" y="222" class="s">grupo-ep2 / demo-openrouter / 2026-04-06</text>
+<text x="78" y="254" class="s">¿Hasta cuándo puedo retirar una asignatura? Prepara un borrador de consulta.</text>
+<rect x="55" y="315" width="710" height="230" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="353" class="b" font-weight="bold">Respuesta con fuente</text>
+<text x="78" y="392" class="s">Plazo y requisitos tomados del manual.</text>
+<text x="78" y="424" class="s">[Documento, sección, versión]</text>
+<text x="78" y="456" class="s">La validación distingue el cierre del modelo</text>
+<text x="78" y="488" class="s">de una respuesta reconstruida desde evidencia.</text>
+<rect x="795" y="315" width="430" height="230" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="818" y="353" class="b" font-weight="bold">Traza de herramientas</text>
+<text x="818" y="392" class="s">buscar_normativa</text>
+<text x="818" y="424" class="s">evaluar_plazo</text>
+<text x="818" y="456" class="s">guardar_borrador</text>
+<text x="818" y="488" class="s">Coste y estado de validación</text>
+<rect x="55" y="570" width="710" height="220" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="78" y="608" class="b" font-weight="bold">Borrador para revisión</text>
+<text x="78" y="647" class="s">Título y texto persistidos en Neon.</text>
+<text x="78" y="679" class="s">No acredita aprobación. No enviado.</text>
+<text x="78" y="711" class="s">Recuperable en la misma conversación.</text>
+<rect x="795" y="570" width="430" height="220" rx="3" fill="white" stroke="#9cafbc" stroke-width="2"/>
+<text x="818" y="608" class="b" font-weight="bold">Continuidad y evidencia</text>
+<text x="818" y="647" class="s">Historial: hasta diez mensajes.</text>
+<text x="818" y="679" class="s">Memoria duradera: borradores.</text>
+<text x="818" y="711" class="s">Exportar ensayos a ZIP.</text>
+<text x="55" y="862" class="s">AsistenteReg EP2 · OpenRouter para modelos · Neon para persistencia</text></svg>

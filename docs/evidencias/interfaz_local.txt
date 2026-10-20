@@ -1,0 +1,1 @@
+Interfaz verificada: informa OPENROUTER_API_KEY y DATABASE_URL ausentes, sin excepciones ni solicitudes de IA.
