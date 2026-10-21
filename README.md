@@ -37,11 +37,16 @@ Las pruebas usan dobles de la API y no consumen saldo. La comprobación real deb
 python scripts/probar_openrouter.py
 ```
 
-La comprobación de PostgreSQL (`python scripts/probar_base_datos.py`) no usa modelos. La prueba de OpenRouter sí usa embeddings y chat de OpenRouter, y guarda evidencia en `docs/evidencias/prueba_real_openrouter.json`. Confirmar citas, herramientas, borrador y condición de plazo antes de la exposición. La ejecución corregida final debe verificarse con la clave del grupo desde Colab; no se utilizó esa clave durante el desarrollo asistido.
+La comprobación de PostgreSQL (`python scripts/probar_base_datos.py`) no usa modelos. La prueba de OpenRouter sí usa embeddings y chat de OpenRouter, y guarda evidencia en `docs/evidencias/prueba_real_openrouter.json`. Confirmar citas, herramientas, borrador y condición de plazo antes de la exposición. La ejecución final se verificó con la clave del grupo desde Colab; sus resultados están en `docs/evidencias/ejecuciones/`.
 
 ## Colab
 
-Abrir `AsistenteReg_EP2_OpenRouter.ipynb` y descargar también `AsistenteReg_EP2_OpenRouter.zip`. La primera celda contiene únicamente dos líneas para abrir el selector de archivos; seleccionar el ZIP sin descomprimirlo. Ejecutar después **Preparar proyecto** para extraerlo y validarlo. No hay un ZIP incrustado, un bloque `PAQUETE` en Base64 ni campos de GitHub en el notebook. Las explicaciones técnicas se encuentran al final. La copia descargable llamada `AsistenteReg_EP2_Colab_ZIP.ipynb` contiene el mismo notebook.
+Hay dos notebooks equivalentes:
+
+- `AsistenteReg_EP2_Colab_GitHub.ipynb` (recomendado, usado en la evidencia final): la primera celda descarga el proyecto desde este repositorio en un commit fijo y muestra la versión utilizada. No requiere subir archivos.
+- `AsistenteReg_EP2_OpenRouter.ipynb`: alternativa sin GitHub. La primera celda abre el selector de archivos para subir el ZIP del proyecto sin descomprimirlo; **Preparar proyecto** lo extrae y valida.
+
+Las explicaciones técnicas se encuentran al final de cada notebook.
 
 Continuar las celdas en orden. La instalación y las pruebas no consumen saldo; la preparación de embeddings y las consultas reales sí usan la clave de OpenRouter.
 
@@ -58,7 +63,11 @@ preparar_git_v2.bat
 PUBLICAR_GITHUB.md
 requirements.txt
 .env.example
+AsistenteReg_EP2_Colab_GitHub.ipynb
 AsistenteReg_EP2_OpenRouter.ipynb
+entrega/
+  Informe_AsistenteReg_EP2.docx
+  Presentacion_AsistenteReg_EP2.pptx
 src/
   agent.py
   provider.py
@@ -143,7 +152,7 @@ Mostrar la cita, la traza y el borrador. Cambiar al **2026-04-11** y preguntar s
 
 ## Validación disponible
 
-La suite actual contiene 73 pruebas sin conexión y 5 de PostgreSQL. La versión final aprobó las 73 sin conexión; las cinco de PostgreSQL se omitieron porque no se configuró `TEST_DATABASE_URL` en esa ejecución. Se reprodujo el caso de tres llamadas simuladas con borrador válido y cierre del modelo sin citas, además de citas inventadas, calendario no aplicable y plazo vencido. Las 78 aprobaron también con PGlite; la ejecución queda en `docs/evidencias/salida_pruebas_postgresql.txt`; usa PostgreSQL embebido y SDK de IA simulado. La creación de las tablas, persistencia y retención se verificaron también por SQL en Neon; la conexión del driver desde Colab requiere ejecutar la celda correspondiente. Estas pruebas no verifican la calidad de la inferencia real con la clave del grupo.
+La suite actual contiene 73 pruebas sin conexión y 5 de PostgreSQL. La versión final aprobó las 73 sin conexión; las cinco de PostgreSQL se omitieron porque no se configuró `TEST_DATABASE_URL` en esa ejecución. Se reprodujo el caso de tres llamadas simuladas con borrador válido y cierre del modelo sin citas, además de citas inventadas, calendario no aplicable y plazo vencido. Las 78 aprobaron también con PGlite; la ejecución queda en `docs/evidencias/salida_pruebas_postgresql.txt`; usa PostgreSQL embebido y SDK de IA simulado. La creación de las tablas, persistencia y retención se verificaron también por SQL en Neon; la conexión del driver desde Colab requiere ejecutar la celda correspondiente. Estas pruebas no verifican la calidad de la inferencia real con la clave del grupo. Esa verificación se hizo en Colab: 73 pruebas aprobadas y 5 omitidas (`salida_pruebas_colab.txt`), memoria k=5 en Neon (`prueba_base_datos.json`) y consultas reales en `ejecuciones/`, incluida una respuesta de convalidación con cita literal validada y abstenciones correctas fuera del manual.
 
 ## Extensión
 
@@ -153,7 +162,7 @@ Para exponer herramientas aparte: sustituir sus implementaciones por adaptadores
 
 ## Entrega y límites
 
-El informe tiene un máximo de cinco páginas. La presentación sigue el aviso reciente: cinco minutos más dos de preguntas. Completar sin IA las justificaciones, conclusiones y reflexiones que exige la pauta, revisar la declaración de asistencia y completar los datos de integrantes. Subir esta estructura limpia a GitHub antes de enviar el enlace por AVA y correo. No se publica ni envía desde este paquete.
+El informe tiene un máximo de cinco páginas. La presentación sigue el aviso reciente: cinco minutos más dos de preguntas. El informe y la presentación finales están en `entrega/`.
 
 El prototipo comparte la base entre los equipos del grupo y no implementa autenticación de usuarios. La conexión remota exige TLS y las credenciales se leen desde secretos. Los IDs separan contextos y no acreditan identidad. El filtro de alcance es léxico y la anonimización no detecta nombres ni todos los formatos: utilizar datos sintéticos. Las citas comprueban trazabilidad formal, no que cada frase se derive semánticamente de la fuente.
 
@@ -173,9 +182,7 @@ OpenRouter. (s. f.). Reasoning tokens. https://openrouter.ai/docs/guides/best-pr
 
 Repositorio: https://github.com/Martinignaciiooo/soluciones_ia_asistente_rag_v2
 
-La carpeta local indicada por Martín es `C:\Users\elmar\Desktop\PRUEBA_SOL_IA\AsistenteReg_EP2_OpenRouter`. El ZIP actualizado contiene los archivos directamente en su raíz. Copiar su contenido a esa carpeta: `app.py`, `README.md`, `src/`, `tests/`, `docs/`, `entrega/` y el notebook deben quedar al mismo nivel, sin una carpeta intermedia `rag_registro`.
-
-Abrir `preparar_git_v2.bat` para configurar origin, preparar la rama main y crear el commit local. El preparador no hace push. Cuando indique LISTO, abrir CMD en esa carpeta y ejecutar `git push -u origin main`. Las instrucciones completas y la configuración de identidad están en [PUBLICAR_GITHUB.md](PUBLICAR_GITHUB.md).
+Para publicar cambios, abrir `preparar_git_v2.bat` para configurar origin, preparar la rama main y crear el commit local. El preparador no hace push. Cuando indique LISTO, abrir CMD en esa carpeta y ejecutar `git push -u origin main`. Las instrucciones completas y la configuración de identidad están en [PUBLICAR_GITHUB.md](PUBLICAR_GITHUB.md).
 
 La aplicación exige `DATABASE_URL`: no cambia automáticamente a SQLite ante un error. SQLite sólo se activa mediante una ruta explícita en las pruebas.
 

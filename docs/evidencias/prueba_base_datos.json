@@ -1,0 +1,12 @@
+{
+  "backend": "postgresql",
+  "clase_memoria": "ConversationBufferWindowMemory",
+  "k": 5,
+  "mensajes_conservados": 10,
+  "intercambios_conservados": 5,
+  "persistencia_entre_conexiones": true,
+  "borrado_del_mas_antiguo": true,
+  "llamadas_a_modelos": 0,
+  "datos_de_prueba_eliminados_al_final": true,
+  "fecha_ejecucion_utc": "2026-10-21T12:55:41.521250+00:00"
+}

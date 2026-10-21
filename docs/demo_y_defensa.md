@@ -5,10 +5,10 @@
 | Tiempo | Integrante sugerido | Contenido |
 |---|---|---|
 | 0:00–0:35 | Martín | Problema organizacional simulado y alcance de la solución. |
-| 0:35–1:35 | Valentina | Arquitectura con OpenRouter para chat y embeddings. Tools y ciclo de observaciones. |
+| 0:35–1:35 | Martín | Arquitectura con OpenRouter para chat y embeddings. Tools y ciclo de observaciones. |
 | 1:35–2:20 | Martín | ConversationBufferWindowMemory, estado persistente y eliminación de mensajes antiguos. |
-| 2:20–4:20 | Ambos | Demo real de consulta, plazo y borrador. |
-| 4:20–5:00 | Ambos | Conclusiones y aprendizajes redactados por ustedes sin IA. |
+| 2:20–4:20 | Martín | Demo real de consulta, plazo y borrador. |
+| 4:20–5:00 | Martín | Conclusiones y aprendizajes redactados por ustedes sin IA. |
 
 Después: dos minutos de preguntas, según el aviso reciente del profesor.
 
@@ -18,7 +18,7 @@ Después: dos minutos de preguntas, según el aviso reciente del profesor.
 2. Configurar `OPENROUTER_API_KEY` y `DATABASE_URL` en `.env` o Secrets de Colab. Verificar PostgreSQL con la celda del notebook o `python scripts/probar_base_datos.py`, sin usar modelos. Nunca proyectar los secretos.
 3. Ejecutar una prueba manual real con `python scripts/probar_openrouter.py`. Esta prueba sí consume chat y embeddings. La clave debe permitir ambos modelos configurados.
 4. Revisar citas, herramientas, borrador y respuesta ante plazo vencido. Revisar saldo y usar un único equipo para presentar.
-5. Completar justificaciones, conclusiones y reflexiones propias, datos de integrantes y repositorio actualizado.
+5. Completar justificaciones, conclusiones y reflexiones propias, datos del autor y repositorio actualizado.
 
 ## Demo breve
 
@@ -56,7 +56,7 @@ La memoria se demuestra reabriendo el mismo ID tras reiniciar la app. Otra conve
 
 ## Escritura propia
 
-Redactar sin IA las razones de las decisiones de diseño, las conclusiones y la reflexión de cada integrante. Usar sólo experiencias, contribuciones y pruebas que el equipo pueda explicar y haya realizado. Los puntos anteriores son una descripción del código, no una justificación personal redactada por el equipo.
+Redactar sin IA las razones de las decisiones de diseño, las conclusiones y la reflexión personal. Usar sólo experiencias, contribuciones y pruebas que el autor pueda explicar y haya realizado. Los puntos anteriores son una descripción del código, no una justificación personal redactada por el autor.
 
 ## Exportar ensayos
 

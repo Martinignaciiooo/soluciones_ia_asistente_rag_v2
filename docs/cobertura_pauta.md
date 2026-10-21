@@ -13,7 +13,7 @@ Estado de preparación, no calificación. El criterio de aceptación final corre
 | IE7 Adaptación demostrada | Tests de vigente/vencido/calendario inaplicable, evidencia insuficiente y recuperación de artefactos | Demo real ensayada y evidencia exportada |
 | IE8 Repositorio y diagramas | README, diagrama, bocetos y scripts en la raíz del proyecto | Publicar y verificar URL de GitHub |
 | IE9 Justificación | Componentes, contratos y referencias documentados; espacios reservados | Redactar justificaciones sin IA |
-| IE10 Comunicación | PPT con cinco láminas principales y anexo; guía cinco minutos más dos de preguntas | Completar aprendizajes y practicar ambos |
+| IE10 Comunicación | PPT con cinco láminas principales y anexo; guía cinco minutos más dos de preguntas | Completar aprendizajes y practicar la exposición |
 
 ## Evidencia y alcance
 

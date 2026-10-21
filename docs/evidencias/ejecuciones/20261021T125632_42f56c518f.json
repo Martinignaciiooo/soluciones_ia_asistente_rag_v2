@@ -1,0 +1,67 @@
+{
+  "tipo_evidencia": "ejecución del agente con proveedor OpenRouter configurado",
+  "origen": "Colab",
+  "fecha_ejecucion_utc": "2026-10-21T12:56:32.111710+00:00",
+  "fecha_simulada": "2026-04-06",
+  "estado_observado": "resultado recibido; revisar contenido",
+  "llamadas_chat_exitosas": 0,
+  "validacion_citas_reportada": null,
+  "resultado": {
+    "respuesta": "No tengo respaldo suficiente para resolver esa consulta. Consulta a Registro Curricular.",
+    "traza": {
+      "modo": "OpenRouter",
+      "almacenamiento": "postgresql",
+      "consulta": "como realizo una justificacion?",
+      "pii": {},
+      "plan": [
+        "recuperar contexto",
+        "consultar evidencia",
+        "verificar plazo si corresponde",
+        "validar y responder"
+      ],
+      "herramientas": [],
+      "decisiones": [],
+      "llamadas": 0,
+      "intentos_llamada": 0,
+      "modelo": "openai/gpt-6-luna",
+      "rag": {
+        "carpeta": "data/interna",
+        "chunk_size_caracteres": 700,
+        "chunk_overlap_caracteres": 120,
+        "modelo_embeddings": "openai/text-embedding-3-small",
+        "fragmentos_indexados": 17,
+        "archivos": [
+          {
+            "archivo": "calendario_academico.md",
+            "sha256": "9bd39646d1c400de2ef544b2cd84b706a77c5b2db6ca710f48d8cda78581846c",
+            "fragmentos": 2
+          },
+          {
+            "archivo": "faq_registro.md",
+            "sha256": "a8df7c4893d8851433cb388ac53b8b0f150cbf79e790ef533cd105b4030e9eca",
+            "fragmentos": 3
+          },
+          {
+            "archivo": "proceso_titulacion.md",
+            "sha256": "e8b6b72dfc119770e177a694ef2dbe66b82087b134b8f6feb044a8274aba2cac",
+            "fragmentos": 3
+          },
+          {
+            "archivo": "reglamento_academico.md",
+            "sha256": "7b71ebcc721f720e69fd8433640b3dc4963976653d28469aaee75117e54a4fbd",
+            "fragmentos": 9
+          }
+        ]
+      },
+      "costo_acumulado_proyecto_usd": 0.003547,
+      "latencia_ms": 8522
+    },
+    "borradores": [
+      [
+        1,
+        "Consulta sobre retiro de asignatura — semestre 2026-01",
+        "BORRADOR PARA REVISIÓN. No acredita aprobación.\n\nA Registro Curricular:\n\nJunto con saludar, solicito orientación sobre el retiro de una asignatura inscrita durante el semestre 2026-01. Agradecería confirmar el procedimiento para presentar la solicitud y si debo aportar algún antecedente o formulario. Indicaré la asignatura y sección, y confirmaré que, tras el retiro, mi carga no quede bajo 12 créditos SCT.\n\nSegún el calendario, el plazo final es el 10-04-2026. El retiro puede solicitarse hasta la semana 6 y no puede dejar una carga inferior a 12 créditos SCT; la asignatura retirada no cuenta como reprobada, pero ocupa una de las tres oportunidades de inscripción.\n\nCitas:\n[CAL-ACAD-2026-01, Calendario Académico Semestre 2026-01, v1.3] “| Plazo final de retiro de asignaturas | 10-04-2026 | 6 |”\n[REG-ACAD-2026, Artículo 42. Retiro de asignaturas, v4.2] “El retiro de una asignatura inscrita puede solicitarse hasta la semana 6 del semestre y no\npuede dejar al estudiante con una carga inferior a 12 créditos SCT. La asignatura retirada\nno se contabiliza como reprobada, pero sí ocupa una de las tres oportunidades de inscripción\nseñaladas en el Artículo 31 letra a).”\n\nAtentamente,\n[Nombre y datos de estudiante]"
+      ]
+    ]
+  }
+}

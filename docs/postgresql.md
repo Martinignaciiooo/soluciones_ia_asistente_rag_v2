@@ -23,7 +23,7 @@ La escritura, la persistencia y la retención de cinco intercambios se comprobar
 
 `drafts` conserva borradores, `usage` registra consumo y reservas y `embedding_cache` reutiliza vectores. El control de presupuesto usa un bloqueo transaccional PostgreSQL compartido por los equipos conectados al mismo esquema. No contabiliza usos de la clave fuera de esta aplicación.
 
-El historial y estos registros permanecen fuera de Colab. Reutilizar la misma URL y el mismo ID de conversación para recuperar la ventana después de reiniciar o desde el equipo del compañero. Una conversación nueva empieza sin historial. La clave y la URL no se imprimen ni se incluyen en el ZIP.
+El historial y estos registros permanecen fuera de Colab. Reutilizar la misma URL y el mismo ID de conversación para recuperar la ventana después de reiniciar o desde otro computador. Una conversación nueva empieza sin historial. La clave y la URL no se imprimen ni se incluyen en el ZIP.
 
 ## Pruebas y conexión real
 

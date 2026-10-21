@@ -13,7 +13,7 @@ ROOT=Path(__file__).resolve().parent
 load_dotenv(ROOT/'.env')
 st.set_page_config(page_title='AsistenteReg EP2',page_icon='📚',layout='wide')
 st.title('AsistenteReg')
-st.caption('Registro Curricular · EP2 · Martín Peña y Valentina')
+st.caption('Registro Curricular · EP2 · Martín Peña')
 st.info('Escenario académico con documentos sintéticos de 2026-01. Las respuestas y los embeddings se solicitan a OpenRouter.')
 missing=[name for name in ('OPENROUTER_API_KEY','DATABASE_URL') if not os.getenv(name)]
 if missing:

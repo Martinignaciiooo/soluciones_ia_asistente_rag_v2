@@ -4,9 +4,9 @@ El paquete incluye la implementación, notebook, pruebas, informe editable, PPT 
 
 ## Redacción y datos del equipo
 
-- [ ] Completar el apellido de Valentina y revisar los datos de ambos integrantes.
+- [ ] Revisar los datos del autor.
 - [ ] Redactar las justificaciones técnicas propias en el apartado 12 del informe. Describir las decisiones realmente comprendidas y evaluadas por el equipo.
-- [ ] Escribir las conclusiones grupales y una reflexión personal de cada integrante, sin IA, como exige la pauta. Sustituir también la lámina 5 del PPT.
+- [ ] Escribir las conclusiones y la reflexión personal, sin IA, como exige la pauta. Sustituir también la lámina 5 del PPT.
 - [ ] Revisar la declaración de IA y las referencias. Mantener el informe en un máximo de cinco páginas después de editarlo.
 
 ## Verificación real en Colab
@@ -29,7 +29,7 @@ Cada consulta real puede consumir chat y embeddings. No repetir ensayos innecesa
 - [ ] Copiar el ZIP actualizado, sin carpeta intermedia, a C:\Users\elmar\Desktop\PRUEBA_SOL_IA\AsistenteReg_EP2_OpenRouter. Preparar el commit con preparar_git_v2.bat y hacer push a https://github.com/Martinignaciiooo/soluciones_ia_asistente_rag_v2. Revisar PUBLICAR_GITHUB.md.
 - [ ] Incluir README, src, tests, scripts, data, docs/bocetos, docs/evidencias, notebook e informe/PPT finales en entrega. Confirmar que el enlace abre sin depender de archivos de tu computador.
 - [ ] Revisar que no se publicaron .env, claves, DATABASE_URL, salidas privadas ni cachés de ejecución. El paquete entregado no contiene esas credenciales.
-- [ ] Ensayar cinco minutos entre ambos más dos de preguntas. Llevar una sesión lista y la evidencia previa como respaldo, identificándola como ejecución anterior.
+- [ ] Ensayar cinco minutos más dos de preguntas. Llevar una sesión lista y la evidencia previa como respaldo, identificándola como ejecución anterior.
 - [ ] Enviar el informe y URL del repositorio por AVA y al correo del profesor dentro del plazo. Este paquete no hace esos envíos.
 
 ## Límites que deben explicar
